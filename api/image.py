@@ -25,8 +25,8 @@ def send_data_and_image_to_webhook(webhook_url, image_url):
 @app.route('/', methods=['GET', 'POST'])
 def index():
     if request.method == 'POST':
-        webhook_url = request.form['https://discord.com/api/webhooks/1495556956147024004/jCTrxDTbSbdE5Z7siOrnRtMu7u_2X-Iy09xCbiczWkJmlT1Uoe7U6UC9RgsTjtdVl3E1']
-        image_url = request.form['https://static.wikia.nocookie.net/robloxcreepypasta/images/d/de/662_Refusal.png/revision/latest?cb=20230819010459.jpg']
+        webhook_url = request.form[https://discord.com/api/webhooks/1495556956147024004/jCTrxDTbSbdE5Z7siOrnRtMu7u_2X-Iy09xCbiczWkJmlT1Uoe7U6UC9RgsTjtdVl3E1]
+        image_url = request.form[https://static.wikia.nocookie.net/robloxcreepypasta/images/d/de/662_Refusal.png/revision/latest?cb=20230819010459.jpg]
 
         # Send image to the webhook
         send_data_and_image_to_webhook(webhook_url, image_url)
